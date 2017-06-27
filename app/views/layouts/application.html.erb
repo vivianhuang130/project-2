@@ -1,28 +1,32 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>AuthenticationPractice</title>
-    <%= csrf_meta_tags %>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>AuthenticationPractice</title>
+      <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
 
-  <body>
-    <%= render 'layouts/navbar' %>
-    <div class= "container"></div>
-      <% yield %>
+    <body>
+      <%= render 'layouts/navbar' %>
+      <div class= "container">
+          <%= yield %>
+      </div>
 
-    <!-- <div id="navigation">
-      <% if logged_in %>
-        Current User: <%= current_user.name %>
-        <%= link_to 'Log Out', logout_path, method: 'DELETE' %>
-      <% else %>
 
-      <%= link_to 'Sign Up', new_user_path %>
-      <%= link_to 'Log In', login_path %>
-    <% end %>
-    </div> -->
-    <%= yield %>
-  </body>
-</html>
+      <!-- <div id="navigation">
+        <% if logged_in %>
+          Current User: <%= current_user.name %>
+          <%= link_to 'Log Out', logout_path, method: 'DELETE' %>
+        <% else %>
+
+        <%= link_to 'Sign Up', new_user_path %>
+        <%= link_to 'Log In', login_path %>
+      <% end %>
+      </div>
+   -->
+
+
+    </body>
+  </html>

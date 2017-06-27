@@ -13,7 +13,7 @@ class PicturesController < ApplicationController
 
   def create
 
-    
+
   end
 
   def update

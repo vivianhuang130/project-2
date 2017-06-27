@@ -1,1 +1,21 @@
-<h1>Users#edit</h1>
+<h1>Users Edit</h1>
+
+<!-- #make form -->
+
+
+<%= form_for @user do |f| %>
+<div>
+  <%= f.text_field :name, placeholder:"Name" %>
+  
+</div>
+
+<div>
+  <%= f.email_field :email, placeholder:"Email" %>
+</div>
+
+<div>
+  <%= f.text_field :tagline, placeholder: "Tagline" %>
+  <%= f.submit 'Edit Tagline' %>
+  <%= @user.tagline %>
+</div>
+<% end %>

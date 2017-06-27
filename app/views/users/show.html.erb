@@ -1,1 +1,7 @@
-<h1></h1>
+<h1>Show view </h1>
+<%= @user.pic_url %>
+<%= @user.name %>
+<%= @user.tagline %>
+<%= @user.bio %>
+<%= link_to 'Edit', edit_user_path %>
+<%= link_to 'Delete', user_path, method: 'Delete', data: {confirm: 'Are you sure?'} %>

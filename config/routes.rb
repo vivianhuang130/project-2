@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  # 
+  # root 'pictures#index'
+  # resources :pictures
+  # devise_for :user2s
   #
   root 'users#index'
   #
